@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Celebrum"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+
+        <ImageView
+            android:id="@+id/base_for_information"
+            android:layout_width="644dp"
+            android:layout_height="164dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/orange_line" />
+
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test User"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/base_for_information"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.41000003" />
+
+        <TextView
+            android:id="@+id/user_other_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kazan, 17 y.o"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/base_for_information"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintTop_toTopOf="@+id/base_for_information"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/base_for_information"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/base_for_information"
+            app:srcCompat="@drawable/user_icon" />
+
+        <Button
+            android:id="@+id/edit_user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:paddingHorizontal="70dp"
+            android:text="редактировать"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/base_for_information"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/count_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Посещено 0\nмероприятий"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_user_button"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+        <TextView
+            android:id="@+id/count_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выиграно 0\nмероприятий"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_user_button"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+        <TextView
+            android:id="@+id/skills_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="Навыки"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/count_win"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skills_text">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Навык №1"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:text="Навык №2"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:text="Навык №3"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:text="Навык №4"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:text="Навык №5"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- MAIN -->
+
+    <!-- MENU -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:padding="2dp"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <!-- MENU -->
+
+</RelativeLayout>

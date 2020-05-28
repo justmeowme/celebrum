@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "345159803618",
+    "firebase_url": "https://celebrum-project.firebaseio.com",
+    "project_id": "celebrum-project",
+    "storage_bucket": "celebrum-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345159803618:android:fdbc5d8ebc1b8aff8df4bb",
+        "android_client_info": {
+          "package_name": "com.example.celebrum_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345159803618-s8k5t9r7dgjnnchuei8ef88scj444d1c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.celebrum_project",
+            "certificate_hash": "219c313b4e139e10db1a8721ca35bbdcabdba5b9"
+          }
+        },
+        {
+          "client_id": "345159803618-njpesov8o38q25sim7rusb9fa2qk48se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU55UFOcqUBjrpl0Rrp95CkFelklYVo-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345159803618-njpesov8o38q25sim7rusb9fa2qk48se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Главная">
+    </item>
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/icon_user"
+        android:title="Профиль">
+    </item>
+    <item
+        android:id="@+id/events"
+        android:icon="@drawable/list"
+        android:title="Мероприятия">
+    </item>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Настройки">
+    </item>
+</menu>
